@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      font-size: 18px;
+    }
+    body{
+      width: 1440px;
+      height: 900px;
+      background-color: hsl(217, 54%, 11%); 
+    }
+    .card{
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+      background-color: hsl(216, 50%, 16%);
+      padding: 2%;
+      border-radius: 2%;
+    }
+    .card>.content>img{
+      width: 300px;
+    }
+    .card>.content>h3{
+      color: hsl(0, 0%, 100%);
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card>.content>p{
+      color: hsl(215, 51%, 70%);
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .sum,.daylft{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly
+    }
+    .eth{
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <div class="content">
+      <img src="images/image-equilibrium.jpg" alt="Image equilibrium">
+
+      <h3>Equilibrium #3429</h3>
+  
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+  
+    </div>
+    
+    <div class="eth">
+      <div class="sum">
+        <img src="images/icon-ethereum.svg" alt="icon ethereum">
+        <p>  0.041 ETH</p>
+      </div>
+      <div class="daylft">
+        <img src="images/icon-clock.svg" alt="icon clock">
+        <p>3 days left</p>
+      </div>
+    </div>
+    <hr>
+    <div class="avatar">
+      <img src="images/image-avatar.png" alt=" Image Avatar">
+      <p>Creation of Jules Wyvern</p>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
